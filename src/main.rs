@@ -14,8 +14,8 @@ async fn main() {
         .unwrap();
 
     println!(
-        "Server running at http://127.0.0.1:3000 with env {:?}",
-        config.environment
+        "Server running at http://127.0.0.1:{} with env {:?}",
+        config.port,config.environment
     );
 
     axum::serve(listener, router).await.unwrap();
