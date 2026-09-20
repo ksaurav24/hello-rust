@@ -7,7 +7,7 @@ use config::{Config, ConfigLoader};
 async fn main() {
     let config = Config::load_env();
 
-    let router = routes::create_router();
+    let router = routes::create_router(config.clone());
 
     let listener = tokio::net::TcpListener::bind(format!("127.0.0.1:{}", config.port))
         .await

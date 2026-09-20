@@ -1,10 +1,8 @@
-use serde::Deserialize;
-use std::{env, u16};
+use serde::{Deserialize, Serialize};
+use std::env;
 
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "lowercase")]
-// add display trait
-
 pub enum Environment {
     Development,
     Production,
