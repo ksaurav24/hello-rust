@@ -1,3 +1,2 @@
-pub async fn hello() -> String{
-    "hello".to_owned()
-}
+pub mod health;
+pub mod hello;
