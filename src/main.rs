@@ -1,6 +1,7 @@
 mod config;
 mod handlers;
 mod routes;
+mod lib;
 
 use config::{Config, ConfigLoader};
 #[tokio::main]
