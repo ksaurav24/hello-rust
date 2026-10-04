@@ -1,5 +1,5 @@
 use crate::config::{Config, Environment};
-use crate::lib::response::ApiResponse;
+use crate::lib::ApiResponse::ApiResponse;
 use axum::{Json, extract::State};
 use serde::Serialize;
 use sysinfo::{ProcessesToUpdate, System, get_current_pid};
